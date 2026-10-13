@@ -13,7 +13,11 @@ This repository hosts downloads and release notes. Application source code is ma
 
 Describe what happened, what you expected, and the Arborist and macOS versions in a [bug report](https://github.com/ten-thousand-hammers/arborist/issues/new?template=bug-report.yml).
 
-For builds with the diagnostic menu, select **Help → Save Diagnostic Report…** and attach the JSON file to the issue.
+For builds with the diagnostic menu, select **Help → Send Diagnostic Report…**.
+Describe the problem, review the snapshot, and select **Send Report**.
+The report goes to the Arborist BugSink server at `bugsink.10000hammers.com`. Keep its report ID for support.
+Your description is included exactly as typed.
+You can also select **Help → Save Diagnostic Report…** and attach the JSON file to a GitHub issue.
 Reports include scan progress, operation timing, and failures. Repository paths, command arguments, output, environment values, and session contents are excluded.
 Hover over a repository in the sidebar to match its current-session diagnostic ID.
 Nothing is uploaded automatically.
