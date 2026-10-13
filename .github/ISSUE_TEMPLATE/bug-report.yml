@@ -25,8 +25,8 @@ body:
   - type: textarea
     id: diagnostics
     attributes:
-      label: Diagnostic report
-      description: Use Help → Save Diagnostic Report and drag the JSON file here. It excludes repository paths, command arguments, output, environment values, and session contents. Nothing is uploaded automatically. If your version does not have that menu, state its version and include a sample from Activity Monitor if possible.
+      label: Diagnostic report or BugSink report ID
+      description: Use Help → Send Diagnostic Report to submit directly to the Arborist BugSink server, then paste the report ID here. Your description is included exactly as typed. Alternatively, use Help → Save Diagnostic Report and drag the JSON file here. It excludes repository paths, command arguments, output, environment values, and session contents. Nothing is uploaded automatically. If your version does not have that menu, state its version and include a sample from Activity Monitor if possible.
   - type: textarea
     id: context
     attributes:
