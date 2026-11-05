@@ -1,0 +1,34 @@
+name: Bug report
+description: Report a stuck scan or another Arborist problem.
+title: "[Bug]: "
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: What happened?
+      description: Describe the problem and what you expected. For a stuck scan, include its progress text and how long you waited.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Steps to reproduce
+      description: Include whether this happened at launch, after Refresh, or after Fetch & Refresh.
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Arborist and macOS versions
+    validations:
+      required: true
+  - type: textarea
+    id: diagnostics
+    attributes:
+      label: Diagnostic report or BugSink report ID
+      description: Use Help → Send Diagnostic Report to submit directly to the Arborist BugSink server, then paste the report ID here. Your description is included exactly as typed. Alternatively, use Help → Save Diagnostic Report and drag the JSON file here. It excludes repository paths, command arguments, output, environment values, and session contents. Nothing is uploaded automatically. If your version does not have that menu, state its version and include a sample from Activity Monitor if possible.
+  - type: textarea
+    id: context
+    attributes:
+      label: Additional context
+      description: Screenshots or recent changes that might help explain the problem. Review attachments before posting to this public repository.
